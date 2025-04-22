@@ -1,0 +1,8 @@
+.vscode
+dat/**
+!dat/.gitkeep
+node_modules/**
+D__*
+.env
+__sys*
+.env*

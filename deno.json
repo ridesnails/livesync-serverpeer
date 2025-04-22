@@ -1,0 +1,77 @@
+{
+    "tasks": {
+        "install": "npm ci",
+        "main": "deno run -A src/main.ts",
+        "dev": "deno run -A --env=.env src/main.ts"
+    },
+    "imports": {
+        "@std/assert": "jsr:@std/assert@1",
+        "node-datachannel": "npm:node-datachannel@^0.26.0",
+        "octagonal-wheels": "npm:octagonal-wheels@^0.1.25",
+        "octagonal-wheels/events": "npm:octagonal-wheels@^0.1.25/events.js",
+        "octagonal-wheels/dataobject/reactive_v2": "npm:octagonal-wheels@^0.1.25/dataobject/reactive_v2.js",
+        "octagonal-wheels/dataobject/reactive": "npm:octagonal-wheels@^0.1.25/dataobject/reactive.js",
+        "octagonal-wheels/collection": "npm:octagonal-wheels@^0.1.25/collection.js",
+        "octagonal-wheels/promises": "npm:octagonal-wheels@^0.1.25/promises.js",
+        "octagonal-wheels/hash/purejs": "npm:octagonal-wheels@^0.1.25/hash/purejs.js",
+        "octagonal-wheels/concurrency/lock_v2": "npm:octagonal-wheels@^0.1.25/concurrency/lock_v2.js",
+        "octagonal-wheels/concurrency/lock": "npm:octagonal-wheels@^0.1.25/concurrency/lock.js",
+        "octagonal-wheels/common/logger": "npm:octagonal-wheels@^0.1.25/common/logger.js",
+        "octagonal-wheels/encryption/encryptionv3.js": "npm:octagonal-wheels@^0.1.25/encryption/encryptionv3.js",
+        "octagonal-wheels/encryption/encryption.js": "npm:octagonal-wheels@^0.1.25/encryption/encryption.js",
+        "octagonal-wheels/encryption": "npm:octagonal-wheels@^0.1.25/encryption/index.js",
+        "octagonal-wheels/object": "npm:octagonal-wheels@^0.1.25/object.js",
+        "pouchdb-adapter-leveldb": "npm:pouchdb-adapter-leveldb@^9.0.0",
+        "pouchdb-adapter-memory": "npm:pouchdb-adapter-memory@^9.0.0",
+        "trystero": "npm:trystero@^0.21.3",
+        "pouchdb-adapter-http": "npm:pouchdb-adapter-http@^9.0.0",
+        "pouchdb-adapter-idb": "npm:pouchdb-adapter-idb@^9.0.0",
+        "pouchdb-adapter-indexeddb": "npm:pouchdb-adapter-indexeddb@^9.0.0",
+        "pouchdb-core": "npm:pouchdb-core@^9.0.0",
+        "pouchdb-errors": "npm:pouchdb-errors@^9.0.0",
+        "pouchdb-find": "npm:pouchdb-find@^9.0.0",
+        "pouchdb-mapreduce": "npm:pouchdb-mapreduce@^9.0.0",
+        "pouchdb-merge": "npm:pouchdb-merge@^9.0.0",
+        "pouchdb-replication": "npm:pouchdb-replication@^9.0.0",
+        "pouchdb-utils": "npm:pouchdb-utils@^9.0.0",
+        "transform-pouch": "npm:transform-pouch@^2.0.0",
+        "idb": "npm:idb@^8.0.2",
+        "minimatch": "npm:minimatch@^10.0.1",
+        "fflate": "npm:fflate@^0.8.2",
+        "./lib/src/worker/bgWorker.ts": "./lib/src/worker/bgWorker.mock.ts",
+        "node-datachannel/polyfill": "npm:node-datachannel@^0.26.0/polyfill"
+    },
+    "nodeModulesDir": "manual",
+    "unstable": [
+        "sloppy-imports",
+        "bare-node-builtins",
+        "kv",
+        "byonm"
+    ],
+    "lint": {
+        "include": [
+            "**/*.ts"
+        ],
+        "exclude": [
+            "lib/**"
+        ],
+        "rules": {
+            "tags": [
+                "recommended"
+            ],
+            "exclude": [
+                "no-sloppy-imports"
+            ]
+        }
+    },
+    "fmt": {
+        "options": {
+            "lineWidth": 120,
+            "singleQuote": false,
+            "useTabs": false,
+            "indentWidth": 4,
+            "proseWrap": "preserve",
+            "semiColons": true
+        }
+    }
+}
