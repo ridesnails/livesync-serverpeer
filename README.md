@@ -20,7 +20,7 @@ This repository contains a P2P pseudo peer for self-hosted LiveSync, which is a 
    ```
 2. Prepare your `.env` file:
    ```bash
-   cp .env.example .env
+   cp .env.sample .env
    vi .env
    ```
 3. Install dependencies:
