@@ -30,7 +30,7 @@ This repository contains a P2P pseudo peer for self-hosted LiveSync, which is a 
    ```
 4. Run the server:
    ```bash
-   deno task
+   deno task dev
    ```
 
 Note: do not use `pm2`. It is not compatible with Deno and will cause issues with the server.
