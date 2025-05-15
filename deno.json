@@ -20,6 +20,7 @@
         "octagonal-wheels/common/logger": "npm:octagonal-wheels@^0.1.25/common/logger.js",
         "octagonal-wheels/encryption/encryptionv3.js": "npm:octagonal-wheels@^0.1.25/encryption/encryptionv3.js",
         "octagonal-wheels/encryption/encryption.js": "npm:octagonal-wheels@^0.1.25/encryption/encryption.js",
+        "octagonal-wheels/encryption/index.js": "npm:octagonal-wheels@^0.1.25/encryption/index.js",
         "octagonal-wheels/encryption": "npm:octagonal-wheels@^0.1.25/encryption/index.js",
         "octagonal-wheels/object": "npm:octagonal-wheels@^0.1.25/object.js",
         "pouchdb-adapter-leveldb": "npm:pouchdb-adapter-leveldb@^9.0.0",
