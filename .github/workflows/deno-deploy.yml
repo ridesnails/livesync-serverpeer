@@ -5,6 +5,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    permissions:        # 👈 这一段是必须的！
+      id-token: write
+      contents: read
     steps:
       - uses: actions/checkout@v4
       - name: Setup Deno
